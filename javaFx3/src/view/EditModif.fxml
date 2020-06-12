@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="723.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReservationController">
+   <children>
+      <ScrollPane layoutX="9.0" layoutY="53.0" prefHeight="723.0" prefWidth="833.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <Pane prefHeight="941.0" prefWidth="810.0">
+               <children>
+                  <Label fx:id="lblNom" layoutX="38.0" layoutY="52.0" text="Nom" />
+                  <TextField fx:id="txtNom" layoutX="102.0" layoutY="47.0" />
+                  <Label fx:id="lblPrenom" layoutX="38.0" layoutY="93.0" text="Prénom" />
+                  <TextField fx:id="txtPrenom" layoutX="102.0" layoutY="88.0" />
+                  <Label fx:id="lblAdrs" layoutX="39.0" layoutY="134.0" text="Adresse" />
+                  <TextField fx:id="txtAdrs" layoutX="103.0" layoutY="129.0" />
+                  <Label fx:id="lblMail" layoutX="39.0" layoutY="175.0" text="Email" />
+                  <TextField fx:id="txtMail" layoutX="103.0" layoutY="170.0" />
+                  <Label fx:id="lblPortable" layoutX="39.0" layoutY="218.0" text="Portable" />
+                  <TextField fx:id="txtPortable" layoutX="103.0" layoutY="213.0" />
+                  <Label fx:id="lblDateNaiss" layoutX="39.0" layoutY="259.0" text="Née le" />
+                  <TextField fx:id="txtDateNaiss" layoutX="103.0" layoutY="254.0" />
+                  <Label fx:id="lblDepartement" layoutX="39.0" layoutY="300.0" text="à Département" />
+                  <TextField fx:id="txtDepartement" layoutX="155.0" layoutY="295.0" />
+                  <Label fx:id="lblVille" layoutX="39.0" layoutY="341.0" text="Ville" />
+                  <TextField fx:id="txtVille" layoutX="103.0" layoutY="336.0" />
+                  <Label fx:id="lblIdNum" layoutX="40.0" layoutY="382.0" text="Titulaire de la pièce n°" />
+                  <TextField fx:id="txtIdNum" layoutX="205.0" layoutY="377.0" />
+                  <Label fx:id="lblDateLivraison" layoutX="40.0" layoutY="423.0" text="Délivrée le" />
+                  <TextField fx:id="txtDateLivraison" layoutX="125.0" layoutY="418.0" />
+                  <Label fx:id="lbldelivreur" layoutX="341.0" layoutY="423.0" text="Par" />
+                  <TextField fx:id="txtDelivreur" layoutX="405.0" layoutY="418.0" />
+                  <Label fx:id="lblImatVehicule" layoutX="40.0" layoutY="470.0" text="N° imatriculation du véhicule" />
+                  <TextField fx:id="txtImatVehicule" layoutX="248.0" layoutY="465.0" />
+                  <TextField fx:id="txtNbrEmplacement" layoutX="259.0" layoutY="511.0" />
+                  <Label fx:id="lblNbrEmplacement" layoutX="43.0" layoutY="516.0" text="Nombre d'emplacement" />
+                  <Button fx:id="btnValider" layoutX="483.0" layoutY="899.0" mnemonicParsing="false" onAction="#insererDonnees" text="Valider et payer en ligne" />
+                  <CheckBox fx:id="checkBox" layoutX="13.0" layoutY="615.0" mnemonicParsing="false" text="Je certifie sur l'honneur l'exactitude des informations remplies" />
+                  <Label layoutX="14.0" layoutY="548.0" prefHeight="59.0" prefWidth="637.0" text="Ces emplacements vous sont personnels et seront déclarés au régistre réglementaire pour remise au Maire de la commune à l'issu du Vide Grenier" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkBox2" layoutX="10.0" layoutY="740.0" mnemonicParsing="false" text="Je certifie sur l'honneur de ne pas être commerçant(e)" />
+                  <CheckBox fx:id="checkBox3" layoutX="11.0" layoutY="759.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="620.0" text="Je certifie sur l'honneur de ne pas vendre que des objets personnels et usagés (Article  L 310-2 du Code du Commerce))" wrapText="true" />
+                  <CheckBox fx:id="checkBox4" layoutX="13.0" layoutY="826.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="613.0" text="Je certifie sur l'honneur de-non partcipation à 2 autre  manifestation  de même nature  au cours de l'année civile. (Article R321-9 du Code Penal))" wrapText="true" />
+                  <CheckBox fx:id="checkBox1" layoutX="11.0" layoutY="651.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="613.0" text="Je m'engage  a laisser libre les emplacements de parking réservés à la décharge des véhicules (cf emplacement verts sur photo plus bas), à defaut que je ne pourrai recevoir un Procès Verbal pour infraction à l'arreté de non stationnement publié par la Mairie  pour le jour de la manifestation" wrapText="true" />
+                  <Label layoutX="78.0" layoutY="52.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="93.0" layoutY="95.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="95.0" layoutY="135.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="81.0" layoutY="175.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="95.0" layoutY="218.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="143.0" layoutY="300.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="77.0" layoutY="341.0" text="*" textFill="#fc0707" />
+                  <Label layoutX="215.0" layoutY="516.0" text="*" textFill="#fc0707" />
+
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

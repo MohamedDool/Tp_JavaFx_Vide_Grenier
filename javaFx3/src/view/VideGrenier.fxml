@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.VideGrenierControlleur">
+   <children>
+      <TabPane layoutX="14.0" layoutY="56.0" prefHeight="500.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Réservation en attente">
+               <content>
+                  <SplitPane dividerPositions="0.25379609544468545" orientation="VERTICAL" prefHeight="400.0" prefWidth="267.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="166.0" prefWidth="509.0">
+                           <children>
+                              <TextField layoutX="14.0" layoutY="14.0" />
+                              <Label layoutX="255.0" layoutY="46.0" prefHeight="18.0" prefWidth="108.0" text="Place Restante :" />
+                              <Label fx:id="lblPlaceRestante" layoutX="388.0" layoutY="46.0" prefHeight="18.0" prefWidth="73.0" text="?/?" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="500.0">
+                           <children>
+                              <TableView fx:id="tablReser" prefHeight="283.0" prefWidth="500.0">
+                                <columns>
+                                  <TableColumn fx:id="nomCol" prefWidth="98.0" text="Nom" />
+                                  <TableColumn fx:id="emplacementCol" prefWidth="129.0" text="Nbre Emplacement" />
+                                    <TableColumn fx:id="emailCol" prefWidth="82.0" text="Email" />
+                                    <TableColumn fx:id="villeCol" text="Ville" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="btnEdit" layoutX="440.0" layoutY="295.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </content>
+          </Tab>
+          <Tab text="Réservation en cours">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Annulation">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

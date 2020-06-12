@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="407.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="view.ConfigControlleur">
+   <children>
+      <TextField fx:id="txtLogin" layoutX="133.0" layoutY="87.0" />
+      <Label layoutX="37.0" layoutY="92.0" text="Login" />
+      <TextField fx:id="txtPasswd" layoutX="133.0" layoutY="137.0" />
+      <TextField fx:id="txtUrl" layoutX="133.0" layoutY="188.0" />
+      <TextField fx:id="txtPort" layoutX="133.0" layoutY="235.0" />
+      <TextField fx:id="txtBdd" layoutX="133.0" layoutY="285.0" />
+      <Button fx:id="btnValiderConf" layoutX="288.0" layoutY="342.0" mnemonicParsing="false" onAction="#validerConf" text="Valider" />
+      <Button fx:id="btnRetour" layoutX="168.0" layoutY="342.0" mnemonicParsing="false" onAction="#retourLogin" text="Retour" />
+      <Label layoutX="37.0" layoutY="142.0" text="Password" />
+      <Label layoutX="37.0" layoutY="193.0" text="URL" />
+      <Label layoutX="37.0" layoutY="240.0" text="PORT" />
+      <Label layoutX="37.0" layoutY="290.0" text="BDD" />
+      <Label layoutX="44.0" layoutY="17.0" prefHeight="39.0" prefWidth="310.0" text="Configuration de la basse de donnée">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

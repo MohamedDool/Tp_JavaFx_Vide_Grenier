@@ -8,6 +8,7 @@ public class Config {
 	private String mdp = "root";
 	private String pswd = "";
 
+//one
 	public String getMdp() {
 		return mdp;
 	}
